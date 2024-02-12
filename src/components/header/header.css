@@ -1,0 +1,29 @@
+.headerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}
+
+@media screen and (min-width: 769px) {
+    .headerWrap {
+        margin: 40px 100px 49px 100px;
+    }
+}
+
+.headerWrap__fig {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 9rem;
+}
+
+@media screen and (min-width: 769px) {
+    .headerWrap__fig {
+        width: 13.2rem;
+    }
+}
+
+.headerWrap__fig img {
+    width: 100%;
+}

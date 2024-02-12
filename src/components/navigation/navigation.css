@@ -1,0 +1,36 @@
+.nav-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 769px) {
+      text-transform: none;
+  }
+}
+
+.nav-header_link-home,
+.nav-header_link-about {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: right;
+  line-height: 142.6%;
+  color: #ff6060;
+  text-decoration: none;
+  padding-left: 0.8rem;
+
+  @media screen and (min-width: 769px) {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      text-align: right;
+      line-height: 142.6%;
+      padding-left: 3.5rem;
+  }
+
+  &:hover,
+  &:focus {
+      text-decoration-line: underline;
+  }
+}

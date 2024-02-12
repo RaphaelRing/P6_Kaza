@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import About from "./pages/a_propos/a_propos";
+import Error from "./pages/page_error/page_error";
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/homepage/homepage';
+import FicheLogement from "./pages/logement/logements";
+import Rate from './components/note/note';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+          <Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+          <Route path="/logement/:id" element={<FicheLogement />} />
+					<Route path="*" element={<Error />} />
+          {/* <Route path="/test" element={<Rate />} /> */}
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

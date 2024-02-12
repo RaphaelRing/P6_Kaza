@@ -1,0 +1,32 @@
+.foot-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 209px;
+    margin-top: 5%;
+    background-color: #000000;
+    flex-direction: column;
+}
+
+.foot-text {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 4% 0 3% 0;
+
+    @media screen and (min-width: 769px) {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.foot-container img {
+    margin-top: 2%;
+    width: 122px;
+    height: 40px;
+}

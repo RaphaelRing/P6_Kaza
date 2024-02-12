@@ -1,0 +1,24 @@
+.aboutBackground {
+  height: 230px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 87%;
+  background: url("../../assets/mobile-about-background.png");
+  margin-top: 20px;
+  margin-left: auto; 
+  margin-right: auto; 
+  background-size: cover;
+
+}
+
+@media screen and (min-width: 769px) {
+  .aboutBackground {
+      background: rgba(0, 0, 0, 0.3) url("../../assets/about-background.png");
+      border-radius: 25px;
+      background-size: cover;
+
+  }
+}

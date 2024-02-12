@@ -1,0 +1,55 @@
+.errorContainer {
+    color: #ff6060;
+    display: flex;
+    flex-direction: column;
+    margin: 22px 6%;
+}
+
+.errorNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 96px;
+    font-weight: 700;
+    margin: 12rem 0 1rem 0;
+
+    @media screen and (min-width: 769px) {
+        font-size: 288px;
+        margin: 0;
+    }
+}
+
+.errorText {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 11%;
+
+    @media screen and (min-width: 769px) {
+        font-size: 36px;
+        margin: 0;
+    }
+}
+
+.errorLinkHome {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    color: #ff6060;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 9rem;
+
+    @media screen and (min-width: 769px) {
+        font-size: 18px;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration-line: underline;
+    }
+}
